@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>Результат расчета:</p>
+<p>Параметры: {{ the_options }}</p>
+<p>Диаметр шины при параметрах: "{{ the_options }}" </p>
+<p>как результат возвращается: <h3>{{ the_result }}</h3></p>
+
+{% endblock %}
