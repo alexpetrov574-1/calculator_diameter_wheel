@@ -1,13 +1,9 @@
 body {
   font-family: Verdana, Geneva, Arial, sans-serif;
   font-size: medium;
-  background-color: white;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
-  border: 5px solid black;
-  padding: 10px 10px 10px 10px;
+  background-image: url("nissan_skyline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
@@ -22,17 +18,6 @@ a img {
 h2 {
   font-size: 150%;
 }
-table {
-  margin-left: 20px;
-  margin-right: 20px;
-  caption-side: bottom;
-  border-collapse: collapse;
-}
-td,
-th {
-  padding: 5px;
-  text-align: left;
-}
 .copyright {
   font-size: 75%;
   font-style: italic;
@@ -45,26 +30,23 @@ th {
   font-weight: 600;
 }
 
-/*** Tables ***/
-
-table {
-  font-size: 1em;
-  background-color: #fafcff;
-  border: 1px solid #909090;
-  color: #2a2a2a;
-  padding: 5px 5px 2px;
-  border-collapse: collapse;
+/*** Площадка для формы и вывода ответа ***/
+.main-place {
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
 }
 
-td,
-th {
-  border: thin dotted gray;
-}
-
-/*** Inputs ***/
-input[type="text"] {
+/*** Ввод ***/
+input[type="number"] {
   font-size: 115%;
-  width: 10%;
+  width: 20%;
+  height: 30px;
 }
 input[type="submit"] {
   font-size: 125%;

@@ -1,14 +1,15 @@
 {% extends 'base.html' %} {% block body %}
-<h2>{{ the_title }}</h2>
-<form method="POST" action="/count">
-  <p>Введиете 3 параметра на шине:</p>
-  <p>
-    <input name="width" type="number" min="0" step="0.1" /> /
-    <input name="percent" type="number" min="0" max="100" step="0.1" /> R
-    <input name="discDiameter" type="number" min="0" max="20" />
-  </p>
-  <p>Когда вы введете все параметры, нажмите кнопку "Рассчитать":</p>
-
-  <p><input value="Рассчитать" type="SUBMIT" /></p>
-</form>
+<div class="main-place">
+  <h2>{{ the_title }}</h2>
+  <form method="POST" action="/count">
+    <p>Введиете 3 параметра на шине:</p>
+    <p>
+      <input name="width" type="number" min="0" step="0.1" /> /
+      <input name="percent" type="number" min="0" max="100" step="0.1" /> R
+      <input name="discDiameter" type="number" min="0" max="20" />
+    </p>
+    <p>Когда вы введете все параметры, нажмите кнопку "Рассчитать"</p>
+    <p><input value="Рассчитать" type="SUBMIT" /></p>
+  </form>
+</div>
 {% endblock %}
